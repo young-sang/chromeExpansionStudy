@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "간단한 확장 프로그램",
+    "version": "1.0",
+    "description": "현재 탭의 제목을 알림으로 표시하는 확장",
+    "permissions": ["activeTab", "scripting"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }

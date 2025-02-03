@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "이미지 목록 확장 프로그램",
+    "version": "1.0",
+    "description": "현재 탭의 이미지 URL 목록을 가져와서 팝업에 표시합니다.",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
